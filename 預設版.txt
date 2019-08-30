@@ -1,0 +1,10 @@
+CREATE TABLE posts (
+    id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    subject varchar(128) not null,
+    content varchar(1000) not null,
+    date datetime not null
+);
+
+insert into posts (subject,content,data)VALUES('This is the subject','ah mo ne ba li dong ann','2019-08-30 16:05:00');
+
+select * from posts where id='1' AND subject='This is the subject'
